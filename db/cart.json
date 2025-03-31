@@ -1,0 +1,9 @@
+[
+    {
+        "name": "cheese burger",
+        "price": 60,
+        "stock": 48,
+        "promo": 0,
+        "purchased": 2
+    }
+]

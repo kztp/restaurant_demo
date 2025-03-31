@@ -1,0 +1,42 @@
+[
+    {
+        "table_id": 1,
+        "status": "avaliable"
+    },
+    {
+        "table_id": 2,
+        "status": "reserved"
+    },
+    {
+        "table_id": 3,
+        "status": "available"
+    },
+    {
+        "table_id": 4,
+        "status": "available"
+    },
+    {
+        "table_id": 5,
+        "status": "available"
+    },
+    {
+        "table_id": 6,
+        "status": "available"
+    },
+    {
+        "table_id": 7,
+        "status": "available"
+    },
+    {
+        "table_id": 8,
+        "status": "available"
+    },
+    {
+        "table_id": 9,
+        "status": "available"
+    },
+    {
+        "table_id": 10,
+        "status": "available"
+    }
+]

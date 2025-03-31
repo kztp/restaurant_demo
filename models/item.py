@@ -1,45 +1,73 @@
-from utils.file_handler import FileHandler
-import json
-
 class Item:
-    def __init__(self, item_id: str, name: str, price: float, stock: int):   #img_path: str
-        self.item_id = item_id
+    """Item class"""
+
+    def __init__(self, name : str, price : int, stock : int , promo : int = None, purchased = 0):
         self.name = name
         self.price = price
-        self.stock = stock  # Available stock quantity
-        #self.img_path = img_path
-        self.role = 'menu'
-
-    def update_stock(self, quantity: int) -> bool:
-        """Updates stock when an item is purchased or restocked."""
-        if self.stock + quantity < 0:
-            return False  # Not enough stock
-        self.stock += quantity
-        return True
+        self.stock = stock
+        self.promo = promo
+        self.purchased = purchased
 
     def to_dict(self):
         """Converts Item object to a dictionary (for JSON response)."""
         return {
-            "item_id": self.item_id,
             "name": self.name,
             "price": self.price,
             "stock": self.stock,
-            ##"img_path": self.img_path   
+            "promo": self.promo,
+            "purchased": self.purchased
         }
 
-    @staticmethod
-    def load_items():
-        """Load all items from json file."""
+    def get_stock(self):
+        """Return the avaliable stock quantitiy"""
+        return self.stock
+
+    def add_stock(self, quantity: int):
+        """Increase stock quantity."""
+        
+        if isinstance(quantity, int) and quantity > 0:
+            self.stock += quantity
+            return True
+        return False
     
-        items_list = FileHandler.read('menu') 
-        print("items_list", items_list)
-        return [Item(**data) for data in items_list]  
+
+    def remove_stock(self, quantity: int):
+        """Decrease stock quantity."""
+        
+        if isinstance(quantity, int) and quantity > 0 and quantity <= self.stock:
+            self.stock -= quantity
+            return True
+        return False
+    
+
+    def get_price(self):
+        """Get price of item with promo."""
+        if self.promo:
+            return self.price * ((100 - self.promo) / 100)
+        return self.price
 
 
-    @staticmethod
-    def save_items(items):
-        """Save the updated item list to json file."""
-        items_data = [item.to_dict() for item in items]  
-        FileHandler.write('menu', items_data)  
+    def clear_purchase(self):
+        """Clear purchase history."""
+        self.purchased = 0
 
 
+    def purchase_item(self, quantity: int):
+        """Purchase item."""
+        if self.stock >= quantity:
+            self.stock -= quantity
+            self.purchased += quantity
+            return True
+        return False
+    
+    def return_item(self, quantity: int):
+        """Return item."""
+        if self.purchased >= quantity:
+            self.stock += quantity
+            self.purchased -= quantity
+            return True
+        elif self.purchased < quantity:
+            self.stock += self.purchased
+            self.purchased = 0
+            return True
+        return False

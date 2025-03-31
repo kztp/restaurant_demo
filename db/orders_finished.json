@@ -1,0 +1,72 @@
+[
+    {
+        "user_id": "email2",
+        "items": [
+            {
+                "name": "item1",
+                "price": 100,
+                "stock": 7,
+                "promo": "10%",
+                "purchased": 3
+            }
+        ],
+        "total_price": 270.0,
+        "status": "done"
+    },
+    {
+        "user_id": "email1",
+        "items": [
+            {
+                "name": "item2",
+                "price": 200,
+                "stock": 7,
+                "promo": "10%",
+                "purchased": 3
+            }
+        ],
+        "total_price": 540.0,
+        "status": "done"
+    },
+    {
+        "user_id": "email2",
+        "items": [
+            {
+                "name": "item1",
+                "price": 100,
+                "stock": 7,
+                "promo": "10%",
+                "purchased": 3
+            }
+        ],
+        "total_price": 270.0,
+        "status": "done"
+    },
+    {
+        "user_id": "email2",
+        "items": [
+            {
+                "name": "item3",
+                "price": 40,
+                "stock": 7,
+                "promo": "0%",
+                "purchased": 6
+            }
+        ],
+        "total_price": 240.0,
+        "status": "done"
+    },
+    {
+        "user_id": "nyan@gmail.com",
+        "items": [
+            {
+                "name": "french fries",
+                "price": 35,
+                "stock": 48,
+                "promo": 0,
+                "purchased": 2
+            }
+        ],
+        "total_price": 70,
+        "status": "done"
+    }
+]

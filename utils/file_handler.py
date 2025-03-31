@@ -2,28 +2,28 @@ import json
 
 class FileHandler:
     @staticmethod
-    def get_file_path(role):
-        file_paths = {
-            "customer": "db/customer.json",
-            "staff": "db/staff.json",
-            "administrator": "db/administrator.json",
-            "owner": "db/owner.json",
-            "menu": "db/item.json"
-        }
-        return file_paths.get(role.lower(), "db/menu.json")    # default to customer file 
-
-    @staticmethod
-    def read(role):
-        file_path = FileHandler.get_file_path(role)
-    
+    def write(file_path ,data):
+        """open json file and write data to it."""
         try:
-            with open(file_path, 'r') as file:
-                return json.load(file)
-        except (FileNotFoundError, json.JSONDecodeError):
-            return []
+            with open(file_path, "w") as file:
+                json.dump(data, file, indent=4)
+                return True
+        except FileNotFoundError:
+            print("File not found")
+            return False
+        except Exception as e:
+            print(e)
+            return False
 
     @staticmethod
-    def write(role, data):
-        file_path = FileHandler.get_file_path(role)
-        with open(file_path, 'w') as file:
-            json.dump(data, file, indent=4)
+    def read(file_path):
+        """"open json file and read data from it."""
+        try:
+            with open(file_path, "r") as file:
+                return json.load(file)
+        except FileNotFoundError:
+            print("File not found")
+            return []
+        except Exception as e:
+            print(e)
+            return []

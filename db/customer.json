@@ -1,11 +1,41 @@
 [
     {
-        "user_id": 1,
-        "name": "John Doe",
-        "email": "john@example.com",
-        "password": "password123",
+        "name": "ztp",
+        "email": "ztp@gmail.com",
+        "password": "12345",
         "role": "customer",
-        "order_history": [],
-        "cart": []
+        "order_history": [
+            {
+                "items": [],
+                "total": 0
+            }
+        ]
+    },
+    {
+        "name": "ztp",
+        "email": "ptz@gmail.com",
+        "password": "12345",
+        "role": "customer",
+        "order_history": []
+    },
+    {
+        "name": "nyan",
+        "email": "nyan@gmail.com",
+        "password": "12347",
+        "role": "customer",
+        "order_history": [
+            {
+                "items": [
+                    {
+                        "name": "french fries",
+                        "price": 35,
+                        "stock": 48,
+                        "promo": 0,
+                        "purchased": 2
+                    }
+                ],
+                "total": 70
+            }
+        ]
     }
 ]

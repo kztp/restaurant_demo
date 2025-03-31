@@ -1,9 +1,41 @@
 [
     {
-        "user_id": 1,
-        "name": "John Doe",
-        "email": "john@example.com",
-        "password": "password123",
-        "role": "staff"
+        "name": "abc",
+        "email": "ghi",
+        "password": "12345",
+        "role": "staff",
+        "timetable": {
+            "Monday": "9am-5pm",
+            "Tuesday": "1pm-8pm",
+            "Friday": "9am-5pm"
+        }
+    },
+    {
+        "name": "wanan",
+        "email": "wanan@gmail.com",
+        "password": "12345",
+        "role": "staff",
+        "timetable": []
+    },
+    {
+        "name": "lwinmoeaung",
+        "email": "lwinmoeaung@gmail.com",
+        "password": "12345",
+        "role": "staff",
+        "timetable": []
+    },
+    {
+        "name": "paing zay",
+        "email": "paingzay@gmail.com",
+        "password": "12345",
+        "role": "staff",
+        "timetable": []
+    },
+    {
+        "name": "hein kyaw nyein",
+        "email": "heinkyawnyein@gmail.com",
+        "password": "12345",
+        "role": "staff",
+        "timetable": []
     }
 ]

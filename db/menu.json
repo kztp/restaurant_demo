@@ -1,0 +1,177 @@
+[
+    {
+        "name": "classic burger",
+        "price": 5,
+        "stock": 20,
+        "promo": null,
+        "purchased": 0
+    },
+    {
+        "name": "regular burger",
+        "price": 5,
+        "stock": 20,
+        "promo": null,
+        "purchased": 0
+    },
+    {
+        "name": "chicken burger",
+        "price": 4,
+        "stock": 20,
+        "promo": null,
+        "purchased": 0
+    },
+    {
+        "name": "mozarella burger",
+        "price": 6,
+        "stock": 20,
+        "promo": null,
+        "purchased": 0
+    },
+    {
+        "name": "double chicken burger",
+        "price": 7,
+        "stock": 20,
+        "promo": null,
+        "purchased": 0
+    },
+    {
+        "name": "beef burger",
+        "price": 5,
+        "stock": 20,
+        "promo": null,
+        "purchased": 0
+    },
+    {
+        "name": "hamburger",
+        "price": 4,
+        "stock": 20,
+        "promo": null,
+        "purchased": 0
+    },
+    {
+        "name": "double cheese beef burger",
+        "price": 8,
+        "stock": 20,
+        "promo": null,
+        "purchased": 0
+    },
+    {
+        "name": "beef steak",
+        "price": 9,
+        "stock": 15,
+        "promo": null,
+        "purchased": 0
+    },
+    {
+        "name": "beef rib bbq",
+        "price": 10,
+        "stock": 10,
+        "promo": null,
+        "purchased": 0
+    },
+    {
+        "name": "pasta bolognese",
+        "price": 8,
+        "stock": 10,
+        "promo": null,
+        "purchased": 0
+    },
+    {
+        "name": "grilled salmon",
+        "price": 10,
+        "stock": 10,
+        "promo": null,
+        "purchased": 0
+    },
+    {
+        "name": "rice with tuna",
+        "price": 12,
+        "stock": 10,
+        "promo": null,
+        "purchased": 0
+    },
+    {
+        "name": "water bottle",
+        "price": 3,
+        "stock": 100,
+        "promo": null,
+        "purchased": 0
+    },
+    {
+        "name": "coca cola",
+        "price": 4,
+        "stock": 100,
+        "promo": null,
+        "purchased": 0
+    },
+    {
+        "name": "red wine",
+        "price": 6,
+        "stock": 50,
+        "promo": null,
+        "purchased": 0
+    },
+    {
+        "name": "beer",
+        "price": 5,
+        "stock": 50,
+        "promo": null,
+        "purchased": 0
+    },
+    {
+        "name": "fresh juice",
+        "price": 6,
+        "stock": 50,
+        "promo": null,
+        "purchased": 0
+    },
+    {
+        "name": "french fries",
+        "price": 6,
+        "stock": 50,
+        "promo": null,
+        "purchased": 0
+    },
+    {
+        "name": "sparkling water",
+        "price": 4,
+        "stock": 50,
+        "promo": null,
+        "purchased": 0
+    },
+    {
+        "name": "green salad",
+        "price": 7,
+        "stock": 50,
+        "promo": null,
+        "purchased": 0
+    },
+    {
+        "name": "avocado salad",
+        "price": 6,
+        "stock": 50,
+        "promo": null,
+        "purchased": 0
+    },
+    {
+        "name": "ceasar salad",
+        "price": 7,
+        "stock": 30,
+        "promo": null,
+        "purchased": 0
+    },
+    {
+        "name": "fried chicken wing",
+        "price": 9,
+        "stock": 30,
+        "promo": null,
+        "purchased": 0
+    },
+    {
+        "name": "fried cheese stick",
+        "price": 8,
+        "stock": 30,
+        "promo": null,
+        "purchased": 0
+    }
+]

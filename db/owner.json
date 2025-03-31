@@ -1,9 +1,8 @@
 [
     {
-        "user_id": 1,
-        "name": "John Doe",
-        "email": "john@example.com",
-        "password": "password123",
+        "name": "ztp",
+        "email": "ztp.owner@gmail.com",
+        "password": "12345",
         "role": "owner"
     }
 ]
